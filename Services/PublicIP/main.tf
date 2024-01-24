@@ -19,4 +19,5 @@ module "PublicIP" {
   rgname = var.rgname
   location = var.location
   allocation_method = var.allocation_method
+  sku = var.sku
 }

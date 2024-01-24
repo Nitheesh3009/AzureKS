@@ -12,3 +12,6 @@ variable "allocation_method" {
   type = string
   default = "dynamic"
 }
+variable "sku" {
+  type = string
+}

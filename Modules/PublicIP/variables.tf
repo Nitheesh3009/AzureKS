@@ -10,5 +10,8 @@ variable "location" {
 }
 variable "allocation_method" {
   type = string
-  default = "dynamic"
+  default = "Dynamic"
+}
+variable "sku" {
+  type = string
 }
