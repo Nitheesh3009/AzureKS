@@ -29,3 +29,7 @@ variable "access" {
 variable "protocol" {
   type = string
 }
+
+variable "source_port_range" {
+  type = string
+}

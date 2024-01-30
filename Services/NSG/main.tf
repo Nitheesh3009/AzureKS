@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     azurerm = {
-    source = "/hashicorp/azurerm"
+    source = "hashicorp/azurerm"
     version = "=3.0.0"
   }
   }
@@ -23,5 +23,5 @@ module "NSG" {
     direction = var.direction
     access = var.access
     protocol = var.protocol
-  
+    source_port_range = var.source_port_range
 }
