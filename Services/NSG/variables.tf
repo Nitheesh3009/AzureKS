@@ -33,3 +33,14 @@ variable "protocol" {
 variable "source_port_range" {
   type = string
 }
+
+variable "destination_port_range" {
+  type = string
+}
+
+variable "source_address_prefix" {
+  type = string
+}
+variable "destination_address_prefix" {
+  type = string
+}
