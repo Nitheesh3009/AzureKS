@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azurerm = {
         source = "hashicorp/azurerm"
-        version = ">=3.0.0"
+        version = "=3.0.0"
     }
   }
 }
@@ -11,4 +11,12 @@ terraform {
 provider "azurerm" {
   skip_provider_registration = true # This is only required when the User, Service Principal, or Identity running Terraform lacks the permissions to register Azure Resource Providers.
   features {}
+}
+
+module "NetworkInterface" {
+  source = "../../Modules/NetworkInterface"
+  name = var.name
+  location = var.location
+  rgname = var.rgname
+  ip_configuration = var.ip_configuration
 }
