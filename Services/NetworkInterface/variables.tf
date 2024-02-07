@@ -15,6 +15,7 @@ variable "ip_configuration" {
     name = string
     subnet_id = string
     private_ip_address_allocation = string
+    primary = string
   })
   )
 }
