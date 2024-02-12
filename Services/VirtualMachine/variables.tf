@@ -11,7 +11,7 @@ variable "location" {
 }
 
 variable "network_interface_ids" {
- type = list()
+ type = list(string)
 }   
 
 variable "osname" {
