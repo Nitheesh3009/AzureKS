@@ -33,3 +33,36 @@ variable "managed_disk_type" {
 variable "vm_size" {
   type = string
 }
+
+
+variable "publisher" {
+  type = string
+}
+
+variable "offer" {
+   type = string
+}
+
+variable "sku" {
+   type = string
+}
+
+variable "version1" {
+   type = string
+}
+
+variable "computername" {
+   type = string
+}
+
+variable "username" {
+   type = string
+}
+
+variable "password" {
+   type = string
+}
+
+variable "disable_password_authentication" {
+  type = string
+}

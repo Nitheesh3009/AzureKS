@@ -24,4 +24,12 @@ module "azurerm_virtual_machine" {
   create_option = var.create_option
   managed_disk_type = var.managed_disk_type
   vm_size = var.vm_size
+  publisher = var.publisher
+  offer = var.offer
+  sku = var.sku
+  version1 = var.version1
+  computername = var.computername
+  username = var.username
+  password = var.password
+  disable_password_authentication = var.disable_password_authentication
 }
