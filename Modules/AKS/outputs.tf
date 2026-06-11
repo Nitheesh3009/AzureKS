@@ -1,15 +1,15 @@
-output "id"{
-    value = azurerm.AKS.akscluster.id
+output "id" {
+  value = azurerm_kubernetes_cluster.akscluster.id
 }
 
 output "aks_name" {
-    value = azurerm.AKS.akscluster.name
+  value = azurerm_kubernetes_cluster.akscluster.name
 }
 
 output "location" {
-  value = azurerm.AKS.akscluster.location
+  value = azurerm_kubernetes_cluster.akscluster.location
 }
 
 output "rgname" {
-  value = azurerm.AKS.akscluster.resource_group_name
+  value = azurerm_kubernetes_cluster.akscluster.resource_group_name
 }
