@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "rg_name": {
+      "type": "string",
+      "metadata": {
+        "description": "(Required) The Name which should be used for this Resource Group. Changing this forces a new Resource Group to be created."
+      }
+    },
+    "rg_location": {
+      "type": "string",
+      "metadata": {
+        "description": "(Required) The Azure region where the Resource Group should be created."
+      }
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2021-04-01",
+      "name": "[parameters('rg_name')]",
+      "location": "[parameters('rg_location')]",
+      "properties": {}
+    }
+  ],
+  "outputs": {
+    "resourceGroupName": {
+      "type": "string",
+      "value": "[parameters('rg_name')]"
+    },
+    "resourceGroupLocation": {
+      "type": "string",
+      "value": "[parameters('rg_location')]"
+    }
+  }
+}
